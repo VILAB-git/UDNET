@@ -1,0 +1,4 @@
+================ Training Loss (Sat Sep 28 21:43:54 2024) ================
+================ Training Loss (Sat Sep 28 21:44:28 2024) ================
+(epoch: 1, iters: 100, time: 0.390, data: 1.219) G_GAN: 0.521 D_real: 0.089 D_fake: 0.101 G: 4.830 NCE: 4.278 SB: 0.028 NCE_Y: 4.285 
+(epoch: 1, iters: 200, time: 0.540, data: 0.005) G_GAN: 0.253 D_real: 0.243 D_fake: 0.278 G: 4.107 NCE: 3.675 SB: 0.026 NCE_Y: 3.983 
