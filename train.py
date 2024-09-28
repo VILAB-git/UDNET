@@ -78,24 +78,3 @@ if __name__ == '__main__':
 
         print('End of epoch %d / %d \t Time Taken: %d sec' % (epoch, opt.n_epochs + opt.n_epochs_decay, time.time() - epoch_start_time))
         model.update_learning_rate()                     # update learning rates at the end of every epoch.
-
-
-# CUDA_VISIBLE_DEVICES=3 python train.py --dataroot /media/jyh3/jyh/data/dsec_pol_extend --name test --mode sb --lambda_SB 1.0 --lambda_NCE 1.0 --gpu_ids 0 --netG unet7 --no_dropout False --num_threads 0
-# CUDA_VISIBLE_DEVICES=2 python train.py --dataroot /media/jyh3/jyh/data/dsec_pol_extend_bin_3 --name unet7_bin3_trial1 --mode sb --lambda_SB 1.0 --lambda_NCE 1.0 --gpu_ids 0 --netG unet7_2 --no_dropout False --input_nc 6 --output_nc 6
-
-# CUDA_VISIBLE_DEVICES=0 python train.py --dataroot /media/jyh3/jyh/data/dsec_pol_extend_bin_3 --name G_UNet9_feat_group_bin3_ngf72_temp_nce0.1 --gpu_ids 0 --netG unet9_feat_group --no_dropout False --input_nc 6 --output_nc 6 --ngf 72 --temp_nc 3 --temp_nce_T 0.1
-# CUDA_VISIBLE_DEVICES=1 python train.py --dataroot /media/jyh3/jyh/data/dsec_pol_extend_bin_3 --name G_UNet9_feat_group_bin3_ngf72_temp_nce0.05 --gpu_ids 0 --netG unet9_feat_group --no_dropout False --input_nc 6 --output_nc 6 --ngf 72 --temp_nc 3 --temp_nce_T 0.05
-
-# conda activate night-day-3d
-# CUDA_VISIBLE_DEVICES=0 python train.py --dataroot /media/jyh3/jyh/data/dsec_pol_extend_bin_3 --name UNet9_full_temp_nce_0.01_nce_0.07 --gpu_ids 0 --netG unet9 --lambda_SB 1.0 --lambda_NCE 1.0 --input_nc 6 --output_nc 6 --ngf 72 --temp_nc 3 --temp_nce_T 0.01
-# CUDA_VISIBLE_DEVICES=1 python train.py --dataroot /media/jyh3/jyh/data/dsec_pol_extend_bin_3 --name UNet9_full_temp_nce_0.03_nce_0.07 --gpu_ids 0 --netG unet9 --lambda_SB 1.0 --lambda_NCE 1.0 --input_nc 6 --output_nc 6 --ngf 72 --temp_nc 3 --temp_nce_T 0.03
-# CUDA_VISIBLE_DEVICES=2 python train.py --dataroot /media/jyh3/jyh/data/dsec_pol_extend_bin_3 --name UNet9_full_temp_nce_0.05_nce_0.07 --gpu_ids 0 --netG unet9 --lambda_SB 1.0 --lambda_NCE 1.0 --input_nc 6 --output_nc 6 --ngf 72 --temp_nc 3 --temp_nce_T 0.05
-# CUDA_VISIBLE_DEVICES=3 python train.py --dataroot /media/jyh3/jyh/data/dsec_pol_extend_bin_3 --name UNet9_full_temp_nce_0.07_nce_0.07 --gpu_ids 0 --netG unet9 --lambda_SB 1.0 --lambda_NCE 1.0 --input_nc 6 --output_nc 6 --ngf 72 --temp_nc 3 --temp_nce_T 0.07
-# CUDA_VISIBLE_DEVICES=0 python train.py --dataroot /media/jyh3/jyh/data/dsec_pol_extend_bin_3 --name UNet9_full_temp_nce_0.09_nce_0.07 --gpu_ids 0 --netG unet9 --lambda_SB 1.0 --lambda_NCE 1.0 --input_nc 6 --output_nc 6 --ngf 72 --temp_nc 3 --temp_nce_T 0.09
-# CUDA_VISIBLE_DEVICES=1 python train.py --dataroot /media/jyh3/jyh/data/dsec_pol_extend_bin_3 --name UNet9_full_temp_nce_0.11_nce_0.07 --gpu_ids 0 --netG unet9 --lambda_SB 1.0 --lambda_NCE 1.0 --input_nc 6 --output_nc 6 --ngf 72 --temp_nc 3 --temp_nce_T 0.11
-# CUDA_VISIBLE_DEVICES=2 python train.py --dataroot /media/jyh3/jyh/data/dsec_pol_extend_bin_3 --name UNet9_full_temp_nce_0.13_nce_0.07 --gpu_ids 0 --netG unet9 --lambda_SB 1.0 --lambda_NCE 1.0 --input_nc 6 --output_nc 6 --ngf 72 --temp_nc 3 --temp_nce_T 0.13
-# CUDA_VISIBLE_DEVICES=3 python train.py --dataroot /media/jyh3/jyh/data/dsec_pol_extend_bin_3 --name UNet9_full_temp_nce_0.15_nce_0.07 --gpu_ids 0 --netG unet9 --lambda_SB 1.0 --lambda_NCE 1.0 --input_nc 6 --output_nc 6 --ngf 72 --temp_nc 3 --temp_nce_T 0.15
-
-# CUDA_VISIBLE_DEVICES=0 python train.py --dataroot /media/jyh3/jyh/data/dsec_pol_extend_bin_3 --name test --gpu_ids 0 --netG unet9 --lambda_SB 1.0 --lambda_NCE 1.0 --input_nc 6 --output_nc 6 --ngf 72 --temp_nc 3 --temp_nce_T 0.11
-
-# python train.py --dataroot /media/jyh3/jyh/data/dsec_pol_extend_bin_3 --name test --gpu_ids 0 --netG unet --lambda_SB 1.0 --lambda_NCE 1.0 --input_nc 6 --output_nc 6 --ngf 72 --temp_nc 3 --temp_nce_T 0.11
