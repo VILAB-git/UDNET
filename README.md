@@ -6,6 +6,9 @@ Official repository for the ECCV 2024 paper, **"Towards Robust Event-based Netwo
 
 I will soon be sharing more details on this pages.
 
+## Pre-processing
+We pre-processed raw events into event histograms in advance, then trained our model and downstream applications.
+
 ## Training
 We used a single GPU(RTX 3090) to train our model.
 ```
